@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+img {
+	/* agar img tidak melebihi element parentnya */
+	max-width: 100%;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+	/* menambah efek transisi ketika dihover */ 
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 1em;
+}
+
+#container {
+}
+
+/* header */
+#header {
+	/*background: #333333 url(../images/bg-masjid.png) no-repeat 95% 100%;*/ /* shorthand */
+	background-color: #333333;
+	background-image: url(../images/bg-masjid.png);
+	background-repeat: no-repeat;
+	background-position: 95% 100%;
+	/*padding: 40px 20px;*/ /*shorthand*/
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+}
+#logo {
+    font-family: 'Pangolin', cursive;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: 2px 2px #666666;
+}
+#menu {
+	background: #666666;
+}
+#menu ul li {
+	display: block;
+	float: left;
+	border-right: 1px solid #2d2d2d;
+	font-size: 16px;
+	position: relative;
+}
+#menu ul li a {
+	display: block;
+	padding: 10px 20px 15px;
+	color: #ffffff;
+}
+#menu ul li a:hover {
+	background: #444444;
+}
+#menu ul li ul {
+	position: absolute;
+	width: 200px;
+	left: -1px;
+	background: #666666;
+	box-shadow: 0px 5px 4px #333333;
+	
+	/*display: none;*/ /* diganti opacity agar ada efek transisinya */
+	
+	opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+
+	z-index: -1; /* menghindari ul terhover  */
+}
+#menu ul li:hover ul {
+	/*display: block;*/ /* diganti opacity agar ada efek transisinya */
+	opacity: 1;
+	z-index: auto;
+}
+#menu ul li:hover > a {
+	/* tambah hover state buat a yg langsung ada di bawah li (About) */
+	/* tanda > untuk element yg langsung ada di bawahnya.. coba hilangkan tanda > untuk mengetahui bedanya */
+	background: #444444;
+}
+#menu ul li ul li {
+	float: none; /* untuk menghilangkan float: left di #menu ul li */
+	border-bottom: 1px solid #2d2d2d;
+	border-left: 1px solid #2d2d2d;
+	font-size: 14px;
+}
+#menu ul li ul li a {
+	padding-top: 15px;
+}

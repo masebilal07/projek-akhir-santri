@@ -1,0 +1,358 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+ /*   font-family: 'Lato', sans-serif;*/
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1f232c;
+    line-height: 1.15;
+}
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+    color: #1f232c;
+    font-size: 13px;
+}
+img {
+  /* agar img tidak melebihi element parentnya */
+  max-width: 100%;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+  outline: none;
+  /* menambah efek transisi ketika dihover */ 
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 1em;
+}
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 700; /* bukan bold atau bolder karena saya menggunakan google font */
+}
+.text-input {
+  border-color: #ccc;
+  padding: 7px 8px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 1px 0 #eee;
+  -webkit-box-shadow: inset 0 1px 0 #eee;
+  box-shadow: inset 0 1px 0 #eee;
+}
+.text-input:focus {
+  border-color: #bbb;
+  -webkit-box-shadow: 0 0 3px 1px #ddd;
+  -moz-box-shadow: 0 0 3px 1px #ddd;
+  box-shadow: 0 0 3px 1px #ddd;
+}
+.btn-submit {
+  background-color: #1f232c;
+  color: #f5f4f2;
+  font-size: 14px;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-submit:hover,
+.btn-submit:active {
+  background-color: #373e4c;
+}
+.btn-submit:active {
+  position: relative;
+  top: 1px;
+}
+.container {
+  background: #f7f9fc;
+  padding-bottom: 157px;
+}
+.header {
+  max-width: 1000px;
+}
+.wrapper {
+  width: 952px;
+  margin: auto;
+}
+.wrapper-dua {
+  width: 786px;
+  margin: auto;
+}
+.satu {
+  width: 470px;
+  float: left;
+  padding-top: 78px;
+} 
+.satu h1 {
+  font-family: lato;
+  font-weight: bold;
+  font-size: 42px;
+  padding-bottom: 10px;
+}
+.navigation {
+  float: right;
+  width: 470px;
+}
+.dua li  {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  float: left;
+  padding-left: 25px;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration:border none;
+  list-style-type:none;
+}
+.dua li a {
+  text-decoration:none;
+}
+.dua {
+  float: right;
+}
+.konten-satu {
+  background: #fff;
+/*  height: 500px;*/
+  max-width: 1000px;
+  box-shadow: 0px 0px 70px #ebedf0; 
+  -moz-box-shadow: 0px 0px 70px #ebedf0; 
+  -webkit-box-shadow: 0px 0px 70px #ebedf0;
+  padding-bottom: 70px;
+}
+.konten-dua {
+  margin-top: 30px;
+  background: #fff;
+  padding-bottom: 100px;
+  max-width: 1000px;
+  box-shadow: 0px 0px 70px #ebedf0; 
+  -moz-box-shadow: 0px 0px 70px #ebedf0; 
+  -webkit-box-shadow: 0px 0px 70px #ebedf0;
+}
+.footer {
+  width: 100%;
+  background: #5c6bc0;
+  padding-top: 68px;
+}
+.text-wahdah {
+  font-family: lato;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  color: #4f5ca6;
+  font-weight: italic;
+  padding-bottom: 30px;
+}
+.footer-navigation {
+  max-width: 470px;
+  margin: auto;
+}
+.footer-dua li {
+  float: left;
+  margin: center;
+  padding-left: 40px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.footer-dua li a {
+  color: #fff;
+}
+.garis {
+  width: 758px;
+  height: 2px;
+  background: #4f5ca6;
+  margin: auto;
+}
+.garis-dua {
+  width: 700px;
+  height: 2px;
+  background: #4f5ca6;
+  margin: auto;
+}
+.nunc-placerat p {
+  padding-top: 30px;
+  text-align:center;
+  font-size: 13px;
+  width: 711px;
+  margin: auto;
+  padding-bottom: 32px;
+  font-family: lato;
+  font-weight: bold;
+}
+.nunc-placerat-dua p {
+  padding-top: 30px;
+  text-align:center;
+  font-size: 13px;
+  width: 711px;
+  margin: auto;
+  padding-bottom: 32px;
+  color: #fff;
+  font-family: lato;
+  font-weight: bold;
+}
+.medsos-navigation {
+  max-width: 250px;
+  margin: auto;
+}
+.footer-medsos li {
+  float: left;
+  
+  padding-left: 38px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 30px;
+}
+button {
+  margin:20px -20px 0 0;
+  float: right;
+  width: 91px;
+  height: 33px;
+  font-family: lato;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  background: #5c6bc0;
+}
+.wrapper-dua small {
+  font-weight: bold;
+  font-family: lato;
+  color: #d9d9d9;
+}
+.wrapper-dua h1 {
+  padding-top: 27px;
+  font-size: 40px;
+}
+.read-more {
+  width: 300px;
+  float: left;
+}
+.read-more p {
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-family: lato;
+  font-size: 21px;
+  color: #5c6bc0;
+}
+.text-konten {
+  padding-top: 30px;
+  padding-bottom: 58px;
+  font-family: lato;
+  font-size: 17px;
+}
+.pager li {
+  float: right;
+  padding-left: 10px;
+  font-family: lato;
+  color: #d9d9d9;
+}
+img {
+	width: 100%;
+}
+.hidden {
+	display: none;
+}
+@media only screen and (max-width:620px) {
+	.header, .konten-dua, .footer {
+		width: 100%;
+	}
+	.wrapper {
+		width: 450px;
+	}
+	.read-more p {
+		  padding-bottom: 0px;
+	}
+	.nunc-placerat-dua p {
+		width: 300px;
+	}
+	.nunc-placerat p {
+  		width: 330px;
+  		color: #fff;
+  		font-weight: normal;
+	}
+	.footer-dua {
+		margin-left: 20px;
+	}
+	.wrapper-dua {
+		width: 350px;
+	}
+	.garis {
+	  width: 350px;
+	}
+	.garis-dua {
+	  width: 350px;
+	}
+	.read-more {
+	  width: 100%;
+	}
+	.menu-satu {
+		display: none;
+	}
+	img {
+		width: 100%;
+	}
+	button {
+		margin: 0 0 -100px 0;
+	}
+	.pager li {
+		padding-left: 0px;
+		padding-right: 10px;
+		float: left;
+	}
+}
